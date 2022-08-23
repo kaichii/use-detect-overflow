@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/use-detect-overflow/static/css/main.77e1d308.chunk.css",
+    "main.js": "/use-detect-overflow/static/js/main.2d609ab1.chunk.js",
+    "main.js.map": "/use-detect-overflow/static/js/main.2d609ab1.chunk.js.map",
+    "runtime-main.js": "/use-detect-overflow/static/js/runtime-main.dc8e488a.js",
+    "runtime-main.js.map": "/use-detect-overflow/static/js/runtime-main.dc8e488a.js.map",
+    "static/js/2.b40837c1.chunk.js": "/use-detect-overflow/static/js/2.b40837c1.chunk.js",
+    "static/js/2.b40837c1.chunk.js.map": "/use-detect-overflow/static/js/2.b40837c1.chunk.js.map",
+    "index.html": "/use-detect-overflow/index.html",
+    "precache-manifest.02ad0762fed9be59f701fc10f95c6a75.js": "/use-detect-overflow/precache-manifest.02ad0762fed9be59f701fc10f95c6a75.js",
+    "service-worker.js": "/use-detect-overflow/service-worker.js",
+    "static/css/main.77e1d308.chunk.css.map": "/use-detect-overflow/static/css/main.77e1d308.chunk.css.map",
+    "static/js/2.b40837c1.chunk.js.LICENSE.txt": "/use-detect-overflow/static/js/2.b40837c1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc8e488a.js",
+    "static/js/2.b40837c1.chunk.js",
+    "static/css/main.77e1d308.chunk.css",
+    "static/js/main.2d609ab1.chunk.js"
+  ]
+}
