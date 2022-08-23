@@ -44,7 +44,7 @@
     "cross-env": "5.2.1",
     "gh-pages": "2.2.0",
     "react": "16.14.0",
-    "react-scripts": "3.4.4",
+    "react-scripts": "5.0.0",
     "react-test-renderer": "16.14.0",
     "rollup": "2.78.1",
     "rollup-plugin-peer-deps-external": "2.2.4",
