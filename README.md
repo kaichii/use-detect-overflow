@@ -13,18 +13,14 @@ npm install --save use-detect-overflow
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from 'react';
 
-import { useMyHook } from 'use-detect-overflow'
+import { useDetectOverflow } from 'use-detect-overflow';
 
 const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
+  const [ref, { overflowX, overflowY }] = useDetectOverflow();
+  return <div ref={ref}>...</div>;
+};
 ```
 
 ## License

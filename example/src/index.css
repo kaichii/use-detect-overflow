@@ -3,3 +3,18 @@
   padding: 0;
   font-family: sans-serif;
 } */
+
+.app {
+  max-width: 50vh;
+  margin: auto;
+  padding: 10%;
+}
+
+.container {
+  width: 80px;
+  height: 200px;
+  border: 1px solid #333;
+  resize: both;
+  overflow: auto;
+  padding: 8px;
+}

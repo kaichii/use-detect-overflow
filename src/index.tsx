@@ -1,5 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
-import { ResizeObserver } from '@juggle/resize-observer';
+import { useState, useRef, useEffect, useMemo } from 'react';
+import { ResizeObserver, ResizeObserverEntry } from '@juggle/resize-observer';
+import createDebounce from 'debounce';
 
 type HTMLOrSVGElement = HTMLElement | SVGElement;
 
@@ -8,16 +9,16 @@ export type State = {
   resizeObserver: ResizeObserver | null;
 };
 
-export function useDetectOverflow() {
-  const state = useRef<State>({ element: null, resizeObserver: null });
-  const [overflowX] = useState(false);
-  const [overflowY] = useState(false);
-  const mounted = useRef(false);
+export type Options = {
+  debounce: number;
+};
 
-  useEffect(() => {
-    mounted.current = true;
-    return () => void (mounted.current = false);
-  });
+export function useDetectOverflow({ debounce }: Options = { debounce: 17 }) {
+  const state = useRef<State>({ element: null, resizeObserver: null });
+  const [overflowX, setOverflowX] = useState(false);
+  const [overflowY, setOverflowY] = useState(false);
+
+  const resizeDebounce = debounce || null;
 
   const ref = (node: HTMLOrSVGElement | null) => {
     if (!node || state.current.element === node) return;
@@ -25,12 +26,19 @@ export function useDetectOverflow() {
     state.current.element = node;
   };
 
-  const handleResize = (
-    entries: ResizeObserverEntry[],
-    observer: ResizeObserver
-  ) => {
-    console.log('resize', entries);
-  };
+  const handleResize = useMemo(() => {
+    const callback = (entries: ResizeObserverEntry[]) => {
+      const node = entries[0];
+
+      const isXOverflowing = node.target.scrollWidth > node.target.clientWidth;
+      const isYOverflowing =
+        node.target.scrollHeight > node.target.clientHeight;
+      setOverflowX(isXOverflowing);
+      setOverflowY(isYOverflowing);
+    };
+
+    return resizeDebounce ? createDebounce(callback, resizeDebounce) : callback;
+  }, [debounce]);
 
   function removeListeners() {
     if (state.current.resizeObserver) {
@@ -46,8 +54,6 @@ export function useDetectOverflow() {
   }
 
   useEffect(() => {
-    if (!mounted) return;
-
     addListeners();
 
     return () => removeListeners();
