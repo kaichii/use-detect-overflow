@@ -37,7 +37,7 @@
     "@rollup/plugin-node-resolve": "13.3.0",
     "@rollup/plugin-typescript": "5.0.2",
     "@rollup/plugin-url": "5.0.1",
-    "@testing-library/react-hooks": "3.7.0",
+    "@testing-library/react-hooks": "8.0.1",
     "@types/debounce": "1.2.1",
     "@types/jest": "23.3.14",
     "@types/react": "16.14.30",
