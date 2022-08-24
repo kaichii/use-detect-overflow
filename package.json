@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@juggle/resize-observer": "^3.4.0",
+    "debounce": "^1.2.1",
     "debounce": "^1.2.1"
   },
   "peerDependencies": {
