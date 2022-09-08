@@ -2,7 +2,7 @@
 
 > React Hook for detect overflow
 
-[![NPM](https://img.shields.io/npm/v/use-detect-overflow.svg)](https://www.npmjs.com/package/use-detect-overflow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-detect-overflow.svg)](https://www.npmjs.com/package/use-detect-overflow) ![NPM Downloads](https://img.shields.io/npm/dm/use-detect-overflow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 [Live Example](https://kaichii.github.io/use-detect-overflow/)
 
