@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/runtime": "^7.3.1",
-    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-babel": "^6.0.0",
     "@rollup/plugin-commonjs": "^23.0.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.4.0",
