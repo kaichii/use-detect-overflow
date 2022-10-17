@@ -37,7 +37,7 @@
     "@rollup/plugin-commonjs": "^23.0.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.4.0",
-    "@rollup/plugin-url": "^7.0.0",
+    "@rollup/plugin-url": "^8.0.0",
     "@testing-library/react-hooks": "^8.0.1",
     "@types/debounce": "^1.2.1",
     "@types/jest": "^29.0.1",
