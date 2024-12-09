@@ -28,7 +28,7 @@
     "debounce": "^2.0.0"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^19.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -41,12 +41,12 @@
     "@testing-library/react-hooks": "^8.0.1",
     "@types/debounce": "^1.2.1",
     "@types/jest": "^29.0.1",
-    "@types/react": "^18.0.20",
+    "@types/react": "^19.0.1",
     "cross-env": "^7.0.3",
     "gh-pages": "^6.0.0",
-    "react": "^18.2.0",
+    "react": "^19.0.0",
     "react-scripts": "^5.0.1",
-    "react-test-renderer": "^18.2.0",
+    "react-test-renderer": "^19.0.0",
     "rollup": "^4.1.4",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "tslib": "^2.0.1",
